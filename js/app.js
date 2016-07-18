@@ -122,7 +122,7 @@ var getInspiration = function(inspo) {
     };
 
     $.ajax({
-        url: "http://api.stackexchange.com/2.2/tags/" + inspo + "/top-answerers/all_time",
+        url: "https://api.stackexchange.com/2.2/tags/" + inspo + "/top-answerers/all_time",
         data: params,
         dataType: "jsonp", //use jsonp to avoid cross origin issues
         type: "GET",
